@@ -1,0 +1,4 @@
+SELECT TOP 10 PERCENT *
+FROM Академики
+ORDER BY
+    ФИО ASC

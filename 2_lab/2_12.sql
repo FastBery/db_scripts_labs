@@ -1,0 +1,6 @@
+SELECT *
+FROM Академики
+ORDER BY
+    ФИО ASC
+    OFFSET 8 ROWS
+    FETCH NEXT 2 ROWS ONLY
