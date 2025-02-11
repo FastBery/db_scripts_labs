@@ -1,0 +1,3 @@
+SELECT *
+FROM Страны
+WHERE Столица IS NOT NULL

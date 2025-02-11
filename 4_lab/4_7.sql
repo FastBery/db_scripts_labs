@@ -1,0 +1,1 @@
+SELECT REPLICATE('Игнатьев', 20)

@@ -1,0 +1,2 @@
+SELECT
+    ROUND(ABS(SQUARE(SIN(PI()/2)) - COS(3*PI()/2)),3)
