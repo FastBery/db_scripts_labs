@@ -1,0 +1,2 @@
+SELECT ROUND(AVG(CAST(Население AS FLOAT)), 1)
+FROM Страны
