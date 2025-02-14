@@ -1,0 +1,6 @@
+CREATE PROC task_2
+AS
+BEGIN
+SELECT *
+FROM Страны
+END
