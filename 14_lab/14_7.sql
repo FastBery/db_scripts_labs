@@ -1,0 +1,5 @@
+DROP TRIGGER trigger_14_1
+DROP TRIGGER trigger_14_2
+DROP TRIGGER trigger_14_3
+DROP TRIGGER trigger_14_4
+DROP TRIGGER trigger_14_5
