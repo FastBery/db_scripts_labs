@@ -1,0 +1,7 @@
+DROP VIEW view_15_1
+DROP VIEW view_15_2
+DROP VIEW view_15_3
+DROP TABLE table_15_4
+DROP TABLE table_15_5
+DROP TABLE table_15_6
+DROP TABLE table_15_7

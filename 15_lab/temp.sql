@@ -1,2 +1,2 @@
 SELECT *
-FROM view_15_3
+FROM table_15_4
