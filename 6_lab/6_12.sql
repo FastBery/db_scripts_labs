@@ -11,7 +11,7 @@ WHERE
 -- FROM
 --     Экзамен Э
 --     INNER JOIN Студент С ON С.Рег_номер = Э.Рег_номер
--- WHERE
+-- WHEREФ
 --     NOT Э.Дата = "2015-06-07"
 
 -- SELECT
