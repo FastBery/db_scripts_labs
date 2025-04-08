@@ -18,10 +18,15 @@ PRINT 'Время вставки 1 000 записей: ' + CAST(DATEDIFF(ms, @st
 -- Замер времени для вставки 10 000 записей
 SET @i = 1;
 SET @start_time = SYSDATETIME();
-WHILE (@i <= 1000000000)
+WHILE (@i <= 1000000)
 BEGIN
     INSERT INTO Сотрудник123 (full_name)
     VALUES ('строка ' + CAST(@i AS VARCHAR));
+    IF (@i % 100000) = 0
+    BEGIN 
+        COMMIT TRANSACTION
+        BEGIN TRANSACTION
+    END;
     SET @i = @i + 1;
 END
 PRINT 'Время вставки 10 000 записей: ' + CAST(DATEDIFF(ms, @start_time, SYSDATETIME()) AS VARCHAR) + ' мс';
@@ -29,10 +34,16 @@ PRINT 'Время вставки 10 000 записей: ' + CAST(DATEDIFF(ms, @s
 -- Замер времени для вставки 100 000 записей
 SET @i = 1;
 SET @start_time = SYSDATETIME();
-WHILE (@i <= 1000000000)
+WHILE (@i <= 1000000)
 BEGIN
     INSERT INTO Сотрудник123 (full_name)
     VALUES ('строка ' + CAST(@i AS VARCHAR));
+    IF (@i % 100000) = 0
+    BEGIN 
+        COMMIT TRANSACTION
+        BEGIN TRANSACTION
+    END;
+
     SET @i = @i + 1;
 END
 PRINT 'Время вставки 100 000 записей: ' + CAST(DATEDIFF(ms, @start_time, SYSDATETIME()) AS VARCHAR) + ' мс';
