@@ -1,0 +1,1 @@
+sqlcmd -S 85.142.157.73,8628 -U saaa -P 35352020 -d FM_12_23_IGNATEV -C -i ./temp.sql

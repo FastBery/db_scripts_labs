@@ -1,0 +1,9 @@
+-- SELECT * FROM INFORMATION_SCHEMA.TABLES 
+-- WHERE TABLE_TYPE='BASE TABLE'
+-- SELECT * FROM subject
+
+SELECT * FROM subjects
+SELECT * FROM marks
+SELECT * FROM students
+SELECT * FROM department
+SELECT * FROM teachers
